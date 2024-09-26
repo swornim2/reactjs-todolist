@@ -1,0 +1,163 @@
+* {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #202124;
+}
+
+h1,
+h2,
+h3,
+input,
+button {
+  font-family: 'Press Start 2P', system-ui;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
+  background: #eff6ff;
+  gap: 14px;
+}
+
+header {
+  display: flex;
+  align-items: stretch;
+  /* Add margin-bottom to create space between the search bar and todo list */
+  margin-bottom: 24px; 
+}
+
+
+header,
+.main {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 14px;
+}
+
+header input {
+  flex: 1;
+  border-radius: 14px;
+  outline: none;
+  width: 100%;
+}
+
+header button {
+  border-radius: 14px;
+  background: transparent;
+  transition-duration: 200ms;
+  cursor: pointer;
+}
+
+header button:hover {
+  opacity: 0.7;
+}
+
+header button,
+header input {
+  padding: 14px 18px;
+  border: none;
+  outline: none;
+  background: white;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  /* Add margin-top to create space between the header and todo list */
+  margin-top: 24px; 
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  padding: 14px;
+  border-radius: 14px;
+  background: white;
+  /* Add margin to create space between the todo items */
+  margin-bottom: 14px; 
+  margin-top: 10px;
+}
+
+
+.todoItem p {
+  flex: 1;
+}
+
+.actionsContainer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.actionsContainer button {
+  transition-duration: 200ms;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.actionsContainer button:hover {
+  opacity: 0.7;
+}
+
+
+
+@media (min-width: 640px) {
+
+  header button,
+  header input {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
+i{
+  padding: 10px;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-button i {
+  font-size: 1.2em; /* Adjust the icon size */
+  color: #202124;   /* Default icon color */
+}
+
+.icon-button:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Slight background change on hover */
+}
+
+.icon-button:hover i {
+  color: #000; /* Change icon color on hover */
+}
+
+.icon-button:active {
+  transform: scale(0.95); /* Slightly shrink on click */
+}
+
+.icon-button:focus {
+  outline: none; /* Remove focus outline */
+}
