@@ -23,7 +23,7 @@ Insert a link to a live demo (if applicable).
 - [Usage](#usage)
 - [Code Structure](#code-structure)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Installation
 
