@@ -1,6 +1,4 @@
-Here's a sample `README.md` file for your Todo List React application. It provides a clear introduction, setup instructions, and explanation of the codebase for potential users or contributors.
 
----
 
 # Todo List Application
 
